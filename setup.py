@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pysnag",
-    version="0.0.1",
+    version="0.0.2",
     author="Karl Berggren",
     author_email="kalle@jjabba.com",
     description="lib for easy access to bugsnags's APIv2",
