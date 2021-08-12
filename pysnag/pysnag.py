@@ -67,7 +67,6 @@ class Organization(Base):
     def fetch_all():
         return Organization.fetch('user/organizations', lambda oo: [Organization(o) for o in oo])
 
-
 class Project(Base):
 
     _stability_trend = None
