@@ -73,7 +73,6 @@ class Project(Base):
 
     def __getattr__(self, attr):
         if attr in ['stability_trend']:
-            print(attr)
             if self._stability_trend is None:
                 self._stability_trend = StabilityTrend.fetch_stability_trend(self.id)
             return self._stability_trend
